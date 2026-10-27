@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Трёхъязычный учебный портал для студентов: лекции, практические задания и тесты.">
+  <title>Student Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Student Learning Hub">
+      <span class="brand-mark">SL</span>
+      <span><strong>Student Learning Hub</strong><small id="brand-subtitle">Учебный портал</small></span>
+    </a>
+    <div class="header-actions">
+      <nav class="languages" aria-label="Language">
+        <button class="lang active" data-lang="ru">RU</button>
+        <button class="lang" data-lang="kk">KZ</button>
+        <button class="lang" data-lang="en">EN</button>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" id="hero-eyebrow">УЧИТЬСЯ • ИССЛЕДОВАТЬ • РАСТИ</span>
+        <h1 id="hero-title">Ваше обучение —<br><span>ваш следующий шаг.</span></h1>
+        <p id="hero-text">Лекции, практические задания и полезные ресурсы — в одном удобном месте.</p>
+        <a class="primary-button" href="#materials" id="hero-button">Перейти к материалам <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="book-stack"><div class="book book-back"></div><div class="book book-mid"></div><div class="book book-front"><span>LEARN</span><i></i><i></i><i></i></div></div>
+        <div class="float-card card-check">✓ <span id="art-card-one">Практика</span></div>
+        <div class="float-card card-note">✦ <span id="art-card-two">Новые знания</span></div>
+      </div>
+    </section>
+
+    <section class="quick-stats" aria-label="Преимущества">
+      <div><span class="stat-icon">▤</span><span><strong id="stat-one-title">Учебные материалы</strong><small id="stat-one-sub">Всё в одном месте</small></span></div>
+      <div><span class="stat-icon">◎</span><span><strong id="stat-two-title">Три языка</strong><small id="stat-two-sub">RU · KZ · EN</small></span></div>
+      <div><span class="stat-icon">↗</span><span><strong id="stat-three-title">Учитесь везде</strong><small id="stat-three-sub">Компьютер и телефон</small></span></div>
+    </section>
+
+    <section class="content-section" id="materials">
+      <div class="section-heading">
+        <div><span class="eyebrow" id="section-eyebrow">ВАША УЧЕБНАЯ БИБЛИОТЕКА</span><h2 id="section-title">Учебные материалы</h2><p id="section-description">Выберите категорию или найдите нужный материал.</p></div>
+        <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Поиск материалов…" aria-label="Поиск материалов"></label>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all" id="filter-all">Все материалы</button>
+        <button class="filter" data-filter="lecture" id="filter-lecture">Лекции</button>
+        <button class="filter" data-filter="practice" id="filter-practice">Практические задания</button>
+        <button class="filter" data-filter="test" id="filter-test">Тесты</button>
+      </div>
+      <div class="materials-grid" id="materials-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>Материалы не найдены. Попробуйте изменить запрос.</p>
+      <div class="teacher-note">
+        <div class="note-icon">✎</div>
+        <div><strong id="teacher-note-title">Для преподавателя</strong><p id="teacher-note-text">Замените примеры карточек своими лекциями, заданиями и файлами. Инструкция находится в файле README.</p></div>
+      </div>
+    </section>
+
+    <section class="bottom-cta">
+      <div><span class="eyebrow" id="cta-eyebrow">ВАШ ПРОГРЕСС НАЧИНАЕТСЯ ЗДЕСЬ</span><h2 id="cta-title">Маленький шаг сегодня.<br>Большие возможности завтра.</h2></div>
+      <a href="#materials" class="secondary-button" id="cta-button">Начать обучение →</a>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">Student Learning Hub</a><p id="footer-text">Учитесь с интересом. Развивайтесь каждый день.</p><span>© <span id="year"></span> Student Learning Hub</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
